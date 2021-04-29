@@ -1,0 +1,27 @@
+
+CREATE DATABASE BATCHSOCIAL;
+
+
+Creating the tables
+
+CREATE table advertisements(AID int(30) not null,
+				ad_name varchar(50),
+                        ad_cost decimal(15,2),
+                        ad_desc varchar(100),
+                        primary key (AID))
+
+
+
+CREATE table market_place(MID int(30) not null,
+		            market_item varchar (50),
+                        item_price decimal(15,2),
+                        item_desc varchar (100),
+                        primary key (MID))
+
+
+
+CREATE table revenue(RID int(30) not null,
+				ad_rev decimal(15,2),
+                        prod_rev decimal(15,2),
+                        primary key (RID))
+
